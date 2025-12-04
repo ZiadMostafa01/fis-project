@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FIS Project</title>
-    <link rel="icon" href="images/logo.png">
+    <link rel="icon" href="images/logo.png" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -21,10 +21,10 @@
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#">Applications</a></li>
+          <li><a href="#applications">Applications</a></li>
           <li><a href="#">Dashboard</a></li>
           <li><a href="#">Insights</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="mobile-btn">
@@ -70,7 +70,7 @@
       </div>
     </section>
 
-    <section class="ai-sections">
+    <section class="ai-sections" id="applications">
       <h2 class="section-title">AI Applications Across Industries</h2>
       <p class="section-subtitle">
         Discover how artificial intelligence is transforming various sectors
@@ -185,7 +185,7 @@
       </div>
     </section>
 
-    <section class="about-ai">
+    <section class="about-ai" id="home">
       <div class="about-container">
         <div class="about-text">
           <h2>About AI Innovation</h2>
@@ -223,7 +223,7 @@
       </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <div class="contact-header">
         <h2>Get in Touch</h2>
         <p>Have questions about AI implementation? We're here to help!</p>
@@ -272,7 +272,10 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-section brand">
-          <h3><span class="icon">🧠</span> AI Explorer</h3>
+          <h3 style="display: flex; align-items: center; gap: 5px;">
+            <img src="images/logo.png" style="width: 35px" alt="" />
+            <span>AI Explorer</span>
+          </h3>
           <p>
             Exploring the frontiers of artificial intelligence and its
             transformative applications across industries.
@@ -311,6 +314,10 @@
 
       <div class="footer-bottom">© 2024 AI Explorer. All rights reserved.</div>
     </footer>
+
+    <button id="backToTop">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <script src="logic.js"></script>
   </body>

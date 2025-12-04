@@ -5,7 +5,44 @@
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
 }
-/* ====== Header Styling ====== */
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #9333EA, #EC4899);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+
+/* زر يظهر */
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Hover */
+#backToTop:hover {
+  transform: scale(1.12);
+}
+
+
+/* ====== Header ====== */
+
 header {
   position: fixed;
   top: 0;
