@@ -213,7 +213,7 @@ nav ul li a:hover {
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 1080px) {
   .landing-container {
     flex-direction: column;
     text-align: center;
@@ -226,6 +226,11 @@ nav ul li a:hover {
 
   .landing-text h1 {
     font-size: 34px;
+  }
+
+
+  .landing-buttons {
+    justify-content: center;
   }
 }
 
