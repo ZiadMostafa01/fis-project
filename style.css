@@ -16,7 +16,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 15px 5%;
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
   transition: background 0.3s ease, backdrop-filter 0.3s ease;
@@ -212,7 +212,6 @@ nav ul li a:hover {
   display: block;
 }
 
-
 @media (max-width: 1080px) {
   .landing-container {
     flex-direction: column;
@@ -227,7 +226,6 @@ nav ul li a:hover {
   .landing-text h1 {
     font-size: 34px;
   }
-
 
   .landing-buttons {
     justify-content: center;
@@ -431,7 +429,6 @@ nav ul li a:hover {
   font-size: 15px;
   text-align: center;
 }
-
 
 .contact-card {
   max-width: 850px;
