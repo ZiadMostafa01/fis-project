@@ -6,41 +6,6 @@
   scroll-behavior: smooth;
 }
 
-#backToTop {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, #9333EA, #EC4899);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  font-size: 15px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 999;
-}
-
-/* زر يظهر */
-#backToTop.show {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-/* Hover */
-#backToTop:hover {
-  transform: scale(1.12);
-}
-
-
 /* ====== Header ====== */
 
 header {
@@ -180,7 +145,6 @@ nav ul li a:hover {
   flex-wrap: wrap;
 }
 
-/* ===== النص ===== */
 .landing-text h1 {
   font-size: 42px;
   font-weight: 800;
@@ -238,7 +202,6 @@ nav ul li a:hover {
   color: white;
 }
 
-/* ===== الصورة ===== */
 .landing-image {
   position: relative;
 }
@@ -249,7 +212,6 @@ nav ul li a:hover {
   display: block;
 }
 
-/* ===== RESPONSIVE ===== */
 
 @media (max-width: 992px) {
   .landing-container {
@@ -278,6 +240,8 @@ nav ul li a:hover {
   }
 }
 
+/* ====== Applications section ====== */
+
 .ai-sections {
   text-align: center;
   padding: 70px 20px;
@@ -304,7 +268,6 @@ nav ul li a:hover {
   gap: 25px;
 }
 
-/* --- Cards --- */
 .industry-card {
   padding: 25px;
   border-radius: 18px;
@@ -350,7 +313,6 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
-/* --- Icon Box --- */
 .icon-box {
   width: 45px;
   height: 45px;
@@ -363,7 +325,6 @@ nav ul li a:hover {
   transition: 0.2s;
 }
 
-/* --- Responsive --- */
 @media (max-width: 992px) {
   .cards-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -466,7 +427,7 @@ nav ul li a:hover {
   text-align: center;
 }
 
-/* Form Card */
+
 .contact-card {
   max-width: 850px;
   margin: 35px auto 0;
@@ -521,7 +482,6 @@ textarea:focus {
   box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
 }
 
-/* Submit Button */
 .submit-btn {
   width: 100%;
   margin-top: 25px;
@@ -540,7 +500,6 @@ textarea:focus {
   opacity: 0.9;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .row {
     flex-direction: column;
@@ -617,4 +576,38 @@ textarea:focus {
   .footer-section h4 {
     text-align: left;
   }
+}
+
+/* Flaoting Button */
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #9333ea, #ec4899);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#backToTop:hover {
+  transform: scale(1.12);
 }
