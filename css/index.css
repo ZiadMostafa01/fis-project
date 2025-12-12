@@ -51,8 +51,6 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 30px;
-  margin: 0;
-  padding: 0;
 }
 
 nav ul li a {
@@ -76,7 +74,7 @@ nav ul li a:hover {
 
 .mobile-nav {
   position: absolute;
-  top: 100%; 
+  top: 100%;
   left: 0;
   width: 100%;
   background: #fff;
@@ -309,7 +307,7 @@ nav ul li a:hover {
 }
 
 .industry-card ul li::before {
-  content: "✔ ";
+  content: "✔";
   color: #10b981;
   font-weight: bold;
 }
