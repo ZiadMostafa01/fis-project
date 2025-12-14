@@ -1,54 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/dashboard.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-</head>
-<body>
-<div class="main-container">
-    <div class="left-side">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-side">
+        <a href="index.html"> </a>
         <i class="fa-solid fa-xmark" id="close-btn"></i>
         <div class="title">
-    
-            <img src="images/logo.png" style="width: 40px;" alt="logo" />
-            <div class="text">
-                <h2>AI Dashboard</h2>
-                <p>Subject Ai Applications</p>
-            </div>
+          <img src="images/logo.png" style="width: 40px" alt="logo" />
+          <div class="text">
+            <a href="index.html" style="text-decoration: none">
+              <h2 style="color: black">AI Dashboard</h2>
+              <p>Subject Ai Applications</p>
+            </a>
+          </div>
         </div>
         <div class="side-bar">
-            <ul>
-                <li class="active-sidebar"><i class="fa-solid fa-chart-line"></i> Overview</li>
-                <li><i class="fa-solid fa-robot"></i> AI Models</li>
-                <li><i class="fa-solid fa-database"></i>Datasets</li>
-                <li><i class="fa-solid fa-graduation-cap"></i>Learning</li>
-                <li><i class="fa-solid fa-code"></i>Applications</li>
-                <li><i class="fa-solid fa-chart-bar"></i>Analytics</li>
-            </ul>
+          <ul>
+            <li class="active-sidebar">
+              <i class="fa-solid fa-chart-line"></i> Overview
+            </li>
+            <li><i class="fa-solid fa-robot"></i> AI Models</li>
+            <li><i class="fa-solid fa-database"></i>Datasets</li>
+            <li><i class="fa-solid fa-graduation-cap"></i>Learning</li>
+            <li><i class="fa-solid fa-code"></i>Applications</li>
+            <li><i class="fa-solid fa-chart-bar"></i>Analytics</li>
+          </ul>
         </div>
-    </div>
-    <div class="right-side">
+      </div>
+      <div class="right-side">
         <div class="header">
-            <i class="fa-solid fa-bars" id="menu-btn"></i>
-            <div class="title">
-                <h2>AI Dashboard Overview</h2>
-                <p>Monitor and analyze AI applications Performance</p>
+          <i class="fa-solid fa-bars" id="menu-btn"></i>
+          <div class="title">
+            <h2>AI Dashboard Overview</h2>
+            <p>Monitor and analyze AI applications Performance</p>
+          </div>
+          <div class="search-notfication">
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="search" placeholder="Search..." />
             </div>
-            <div class="search-notfication">
-                <div class="search">
-                    <i class="fa-solid fa-magnifying-glass"></i> 
-                    <input type="search" placeholder="Search...">
-                </div>
-                    <div class="notfication"><i class="fa-solid fa-bell"></i>
-                </div>
-            </div>
+            <div class="notfication"><i class="fa-solid fa-bell"></i></div>
+          </div>
         </div>
-    </div>
-</div>
+        <div class="dashboard-content">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-info">
+                <p>Active Models</p>
+                <h3>24</h3>
+                <span class="up">▲ 12% increase</span>
+              </div>
+              <div class="icon-box" style="background-color: #dbeafe">
+                <i
+                  class="fa-solid fa-robot"
+                  style="font-size: 20px; color: #3b82f6"
+                ></i>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-info">
+                <p>Processing Jobs</p>
+                <h3>156</h3>
+                <span class="up">▲ 8% increase</span>
+              </div>
+              <div class="icon-box" style="background-color: #f3e8ff">
+                <i
+                  class="fa-solid fa-gears"
+                  style="font-size: 20px; color: #9333ea"
+                ></i>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-info">
+                <p>Accuracy Rate</p>
+                <h3>94.2%</h3>
+                <span class="up">▲ 2.1% increase</span>
+              </div>
+              <div class="icon-box" style="background-color: #dcfce7">
+                <i
+                  class="fa-solid fa-bullseye"
+                  style="font-size: 20px; color: #16a34a"
+                ></i>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-info">
+                <p>Total Predictions</p>
+                <h3>2.4M</h3>
+                <span class="up">▲ 15% increase</span>
+              </div>
+              <div class="icon-box" style="background-color: #ffedd5">
+                <i
+                  class="fa-solid fa-chart-line"
+                  style="font-size: 20px; color: #ea580c"
+                ></i>
+              </div>
+            </div>
+          </div>
 
-<script src="js/dashboard.js"></script>
-</body>
+          <div class="charts-grid">
+            <div class="card">
+              <h4>Model Performance</h4>
+              <img
+                src="images/Excel-charts-11.png"
+                alt=""
+                style="width: 100%; height: 400px"
+              />
+            </div>
+            <div class="card">
+              <h4>Application Usage</h4>
+              <img
+                src="images/download.png"
+                alt=""
+                style="width: 100%; height: 400px"
+              />
+            </div>
+          </div>
+
+          <div class="bottom-grid">
+            <div class="card">
+              <div class="card-heading">
+                <div class="icon-box" style="background-color: #dbeafe">
+                  <i
+                    class="fa-solid fa-language"
+                    style="font-size: 20px; color: #3b82f6"
+                  ></i>
+                </div>
+                <h4>Natural Language Processing</h4>
+              </div>
+
+              <ul>
+                <li>Sentiment Analysis <span>98.5%</span></li>
+                <li>Text Classification <span>96.2%</span></li>
+                <li>NER <span>94.8%</span></li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="card-heading">
+                <div class="icon-box" style="background-color: #dcfce7">
+                  <i
+                    class="fa-solid fa-eye"
+                    style="font-size: 20px; color: #16a34a"
+                  ></i>
+                </div>
+                <h4>Computer Vision</h4>
+              </div>
+              <ul>
+                <li>Object Detection <span>97.3%</span></li>
+                <li>Face Recognition <span>99.1%</span></li>
+                <li>Image Classification <span>95.7%</span></li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="card-heading">
+                <div class="icon-box" style="background-color: #f3e8ff">
+                  <i
+                    class="fa-solid fa-brain"
+                    style="font-size: 20px; color: #9333ea"
+                  ></i>
+                </div>
+                <h4>Machine Learning</h4>
+              </div>
+              <ul>
+                <li>Predictive Analytics <span>92.4%</span></li>
+                <li>Classification Models <span>94.6%</span></li>
+                <li>Regression Analysis <span>91.8%</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+  </body>
 </html>

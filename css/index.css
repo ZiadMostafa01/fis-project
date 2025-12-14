@@ -307,7 +307,7 @@ nav ul li a:hover {
 }
 
 .industry-card ul li::before {
-  content: "✔";
+  content: "✔ ";
   color: #10b981;
   font-weight: bold;
 }
@@ -555,6 +555,17 @@ textarea:focus {
 .icon {
   font-size: 22px;
   margin-right: 6px;
+}
+.our-names li a {
+  text-decoration: none;
+  color: #6b7280;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.our-names li a:hover {
+  color: white;
+  background-color: #1e2129;
+  padding: 6px 10px;
 }
 
 .footer-bottom {
