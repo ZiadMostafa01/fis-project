@@ -63,6 +63,19 @@ nav ul li a {
 nav ul li a:hover {
   color: #9333ea;
 }
+
+.login-btn {
+  background-color: #bb08b2;
+  border-radius: 10px;
+  padding: 7px 16px;
+  color: white;
+  transition: 0.3s;
+}
+.login-btn:hover {
+  background-color: #d128c9;
+  color: white;
+}
+
 .mobile-btn {
   display: none;
   font-size: 20px;
